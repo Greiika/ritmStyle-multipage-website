@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none ;
+    color: $primary;    
+}
+
+
+ul {
+    list-style: none;
+}
+
+input, button {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+input:focus, 
+button:focus {
+    outline: none;
+}
+
+button, 
+input[type='submit'] {
+    background: none;
+    cursor: pointer;
+}
+
+img, svg {
+    font-size: 0;
+    max-width: 100%;
+    height: auto;
+}

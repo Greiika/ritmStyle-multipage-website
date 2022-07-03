@@ -1,0 +1,110 @@
+.contacts {
+
+    // .contacts__inner
+
+    &__inner {
+        display: grid;
+        grid-template-columns:  repeat(3, 1fr);
+        flex-wrap: wrap;
+        grid-auto-rows: auto;
+        grid-gap: 24px 48px;
+        margin-bottom: 90px;
+        @media (max-width:992px) {
+            grid-template-columns:  repeat(2, 1fr);
+            grid-gap: 16px 24px;
+        }
+        @media (max-width:467.98px) {
+            grid-template-columns:  repeat(1, 1fr);
+            grid-gap: 16px 0;
+            margin-bottom: 45px;
+        }
+    }
+
+    // .contacts__maps
+
+    &__maps {
+        img {
+            border-radius: 10px;
+            vertical-align: middle;  
+            width: 100%;        
+        }
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        @media (max-width:468px) {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    }
+
+    // .contacts__info
+
+    &__info {
+        background-color: $sub-primary;
+        padding: 35px 45px;
+        border-radius: 10px;
+        @media (max-width:767.98px) {
+            padding: 15px 25px;
+        }
+        @media (max-width:468px) {
+            padding: 25px 35px;
+        }
+    }
+
+    // .contacts__title
+
+    &__title {
+        margin-bottom: 20px;
+        @media (max-width:468px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    // .contacts__list
+
+    &__list {
+        margin-bottom: 30px;
+        @media (max-width:468px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    // .contacts__item
+
+    &__item {
+        padding-left: 40px;
+        @media (max-width:468px) {
+           font-size: 14px;
+        }
+        & + & {
+            margin-top: 21px;
+            @media (max-width:468px) {
+                margin-top: 16px;
+            }
+        }
+    }
+    &__item--one {
+        background: url(../images/marker-icon.svg) no-repeat;
+    }
+    &__item--two {
+        background: url(../images/metro-icon.svg) no-repeat;
+    }
+    &__item--three {
+        background: url(../images/record-icon.svg) no-repeat;
+    }
+}
+.contacts-btn {
+    background-color: #fff;
+    color: $sub-primary;
+
+}
+
+.contacts-btn:hover {
+    background-color: $sub-primary;
+    color: #fff;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px #fff;
+}

@@ -1,0 +1,70 @@
+.about-us {
+
+    // .about-us__inner
+
+    &__inner {
+        max-width: 1100px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    // .about-us__item
+
+    &__item {
+        @include display-flex;
+        flex-wrap: wrap;
+    }
+    &__item:nth-child(2) {
+        flex-direction: row-reverse;
+    }
+    &__item + &__item{
+        margin-top: 100px;
+        @media (max-width: 768px) {
+            margin-top: 75px;
+        }
+        @media (max-width: 468px) {
+            margin-top: 50px;
+        }
+    }
+
+    // .about-us__info
+
+    &__info {
+        flex: 0 0 42.364%;
+        @media (max-width: 992px) {
+            flex: 0 0 100%;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 468px) {
+            text-align: justify;
+        }
+    }
+
+    // .about-us__title
+
+    &__title {
+        margin-bottom: 30px;
+        @include font-montserrat;
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    // .about-us__text
+
+    &__text {
+        @include font-montserrat;
+        font-weight: 300;
+    }
+    &__text + &__text {
+        margin-top: 24px;
+    }
+
+    // .about-us__img
+
+    &__img {
+        img {
+            border-radius: 10px;
+            vertical-align: top;
+        }
+    }
+}

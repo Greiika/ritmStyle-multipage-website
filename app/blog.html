@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Блог</title>
+        <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.min.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="navigation ">
+                    <div class="navigation__inner">
+                        <div class="menu-burger">
+                            <span></span>
+                        </div>
+                        <div class="logo">
+                            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                        </div>
+                        <div class="menu">
+                            <a href="index.html#home" class="menu__link">Главная</a>
+                            <a href="index.html#services" class="menu__link">Сеансы</a>
+                            <a href="index.html#reviews" class="menu__link">Отзывы</a>
+                            <a href="index.html#contacts" class="menu__link">Контакты</a>
+                            <a href="news.html" class="menu__link">Новости</a>
+                            <a href="index.html#about-us" class="menu__link">Обо мне</a>
+                            <a href="blog.html" class="menu__link">Блог</a>
+                        </div>
+                        <button class="header-btn btn">Записаться на сеанс</button>
+                    </div>
+                </nav>
+            </header>
+            <main class="main">
+                <section class="blog">
+                    <div class="container">
+                        <div class="blog__inner">
+                            <div class="heading heading--mb">
+                                <svg  width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0H14C21.732 0 28 6.26801 28 14V14H14C6.26801 14 0 7.73199 0 0V0Z"/>
+                                </svg>
+                                <h2>Блог</h2>
+                                <svg  width="28" height="14" viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M28 0H14C6.26801 0 0 6.26801 0 14H14C21.732 14 28 7.73199 28 0Z" />
+                                </svg>
+                            </div>
+                            <div class="blog__content">
+                                <div class="blog__items">
+                                    <div class="blog__item">
+                                        <img src="images/blog/1.png" alt="">
+                                    </div>
+                                    <div class="blog__item">
+                                        <span class="blog__item-date date">13.02.2022</span>
+                                        <h3 class="blog__item-title">Новый формат сеансов</h3>
+                                        <p class="blog__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.</p>
+                                        <a class="blog__item-link" href="#">Читать статью</a>
+                                    </div>    
+                                </div>
+                                <div class="blog__items">
+                                    <div class="blog__item">
+                                        <img src="images/blog/1.png" alt="">
+                                    </div>
+                                    <div class="blog__item">
+                                        <span class="blog__item-date date">13.02.2022</span>
+                                        <h3 class="blog__item-title">Новый формат сеансов</h3>
+                                        <p class="blog__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget massa vitae tempus at pretium lacus viverra. Vitae libero vivamus quis enim quam vitae dictumst nulla duis. Sed nisl nibh et morbi tristique suspendisse morbi. Consequat facilisi tortor consectetur magnis odio. Risus, aenean tortor cras consectetur lacus, ut erat ac et. Fermentum aliquam ac egestas eget risus a. Maecenas sed pellentesque bibendum vitae at praesent sed. Amet pretium arcu gravida arcu ut dui sem quis id. Tristique in leo donec proin odio eget. Neque ut in egestas lacus sit nunc, nec. Proin mattis augue sit leo sagittis nam id accumsan. Pulvinar nunc fermentum vulputate ultrices pulvinar sed ultrices quis.</p>
+                                        <a class="blog__item-link" href="#">Читать статью</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="copyright">
+                    <div class="container">
+                        <div class="copyright__inner">
+                             <span>&copy; 2018-2022 RitmStyle</span>
+                             <span>Сделано d-e-n.info</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="modal">
+                <div class="modal__content">
+                    <div class="modal__heading">
+                        <h2 class="modal__title" >Модальное окно</h2>
+                        <div class="modal__close-button"></div>
+                    </div>
+                    <form class="modal__form">
+                        <input class="modal__form-input" type="text" name="Name" placeholder="Ваше имя" required>
+                        <input class="modal__form-input" type="email" name="E-mail" placeholder="Ваш е-маил" required>
+                        <input class="modal__form-input" id="date" type="datetime-local" name="Date" required>
+                        <button class="modal__form-button">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+.copyright {
+    &__inner {
+        @include display-flex;
+        margin-bottom: 30px;
+        @media (max-width: 425px) {
+            flex-direction: column;
+            span + span {
+                margin-top: 10px;
+            }
+        }
+    }
+}

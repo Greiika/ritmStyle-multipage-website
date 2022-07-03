@@ -1,0 +1,96 @@
+.price {
+
+    // .price__inner
+
+    &__inner {
+        max-width: 1100px;
+        margin: 0 auto;
+
+    }   
+
+    // .price__row
+
+    &__row {
+        @include display-flex;
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .price__list
+
+    &__list {
+        flex: 0 0 46%;
+        margin-top: -6%;
+        max-width: 100%;
+        width: 100%;
+        @media (max-width:805px) {
+            flex: 0 0 48%;
+        }
+        @media (max-width:768px) {
+            flex: 0 0 100%;
+            max-width: 75%;
+            text-align: center;
+        }
+        @media (max-width:592px) {
+            max-width: 90%;
+        }
+        @media (max-width:468px) {
+            max-width: 100%;
+        }
+    }
+
+    // .price__items
+
+    &__items {
+        @media (max-width:768px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .price__item
+
+    &__item {
+        padding-left: 38px;
+        @include display-flex;
+        @include font-montserrat;
+        font-size: 18px;
+        position: relative;
+        @media (max-width:468px) {
+            font-size: 14px;
+            padding-left: 30px;
+        }
+        & + & {
+            margin-top: 31px;
+            @media (max-width:468px) {
+                margin-top: 20px;
+            }
+        }
+        span {
+            @include font-el-messiri;
+            font-size: inherit;
+        }
+    }
+    &__item::after{
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 9px;
+        top: calc(50% - 5px);
+        left: 0;
+        background: url(../images/leaf.svg) no-repeat;
+    }
+
+    // .price-list__img
+
+    &__img {
+        flex: 0 0 48%;
+        h3 {
+            text-align: center;
+        }
+        img {
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+    }
+}

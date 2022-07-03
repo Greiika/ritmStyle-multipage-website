@@ -1,0 +1,142 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	@include font-montserrat;
+	background-color: $bg-primary;
+	color: $primary;
+	font-size: 100%;
+}
+
+body.fixed {
+	overflow: hidden;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.main {
+	flex: 1 0 auto;
+	
+}
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1326px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+    max-width: 1766px;
+    margin: 0 auto;
+	
+}
+
+.btn {
+	max-width: 100%;
+	background-color: $sub-primary;
+	border-radius: 3px;
+	padding: 9px 15px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 13px;
+	border: 1px solid rgba(255,255,255, 0.5);
+    transition: all 0.3s ease .0s;
+
+}
+.btn:hover {
+	box-shadow: 0 5px 10px $sub-primary;
+}
+.pulse {
+	background-color: aquamarine;
+	border-radius: 50%;
+	animation: pulse 0.7s ease-out;
+	transform: scale(0);
+	position: absolute;
+	z-index: 10;
+}
+@keyframes pulse {
+	to {
+		transform: scale(2);
+		background-color: #fff;
+		opacity: 0;
+	}
+}
+
+
+.heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+    margin-bottom: 100px;
+	@include font-el-messiri;
+	@media (max-width: 991.98px) {
+		margin-bottom: 85px;
+	}
+	@media (max-width: 767.98px) {
+		margin-bottom: 70px;
+	}
+	@media (max-width: 467.98px) {
+		margin-bottom: 55px;
+	}
+    h2 {
+        font-size: 42px;
+		margin-right: 45px;
+		margin-left: 45px;
+		@media (max-width:1326px) {
+			font-size: calc(24px + (42 - 24) * ((100vw - 320px) / (1326 - 320)));
+			margin-right: calc(25px + (45 - 25) * ((100vw - 320px) / (1326 - 320)));
+			margin-left: calc(25px + (45 - 25) * ((100vw - 320px) / (1326 - 320)));
+		}
+    }
+
+	svg {
+		fill: #018ABE;
+		@media (max-width: 374.98px) {
+			display: none;
+		}
+	}
+}
+
+.heading--mb {
+	margin-bottom: 60px;
+	@media (max-width: 1326px) {
+		margin-bottom: calc(30px + (60 - 30) * ((100vw - 320px) / (1326 - 320)));
+	}
+}
+
+.home,
+.services,
+.reviews,
+.about-us,
+.price {
+    margin-bottom: 150px;
+	@media (max-width: 991.98px) {
+		margin-bottom: 125px;
+	}
+	@media (max-width: 767.98px) {
+		margin-bottom: 100px;
+	}
+	@media (max-width: 467.98px) {
+		margin-bottom: 75px;
+	}
+}
+
+.date {
+	display: inline-block;
+	padding: 5px 12px;
+	background-color: $sub-primary;
+	border-radius: 5px;
+	@include font-montserrat;
+	font-weight: 700;
+	font-size: 14px;
+}
